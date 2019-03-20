@@ -1,0 +1,31 @@
+<div>
+  <div >
+    <div class="button-row">In Value</div>
+    <div class="button-row add-button">
+      <button (click)="addNewRow()">Add</button>
+    </div>
+  </div>
+  <form [formGroup]="valueForm">
+    <table>
+      <tbody>
+        <tr *ngFor="let item of valueForm.get('inValueArr').controls; let i = index;">
+          <td>
+              <country-accessor [formControl]="item.controls.country"></country-accessor>
+          </td>
+          <td>
+            <state-accessor [formControl]="item.controls.state"></state-accessor>
+          </td>
+          <td>
+            <start-accessor [formControl]="item.controls.start"></start-accessor>
+          </td>
+          <td>
+            <end-accessor [formControl]="item.controls.end"></end-accessor>
+          </td>          
+          <td>
+              <button (click)="deleteRow(i)">Delete</button>            
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>  
+</div>

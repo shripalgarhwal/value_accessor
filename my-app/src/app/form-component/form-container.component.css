@@ -1,0 +1,13 @@
+.form-container{
+    width: 100%;
+}
+.form-container_value-row{
+    width: 100%;
+    height: 50vh;
+    border: 1px solid gray;
+}
+.form-container_not-value-row{
+    width: 100%;
+    height: 50vh;
+    border: 1px solid gray;
+}

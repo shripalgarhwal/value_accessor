@@ -1,0 +1,6 @@
+<select #selectState (change)="changeEvent($event)">
+  <option *ngFor="let stateName of stateList"  
+     >
+    {{ stateName }}
+  </option>
+</select>

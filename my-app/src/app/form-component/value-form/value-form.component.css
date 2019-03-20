@@ -1,0 +1,8 @@
+
+.button-row{
+    display: inline-block;
+    width: 50%;
+}
+.add-button{
+    text-align: right;
+}
